@@ -5,7 +5,7 @@ FROM node:18 as build
 ARG backend_url
 
 # Set the backend URL as an enviroment variable for the build process
-ENV REACT_APP_API_URL $backend_url
+ENV REACT_APP_API_URL=$backend_url
 
 # Set the working directory in the container
 WORKDIR /app
