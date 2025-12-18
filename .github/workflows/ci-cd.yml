@@ -23,7 +23,8 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          build-args: | backend_url=https://catedra3arqui.onrender.com/api/
+          build-args: | 
+            backend_url=https://catedra3arqui.onrender.com/api/
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/cubi12-front:latest
 
       - name: Trigger Render Deploy Hook
