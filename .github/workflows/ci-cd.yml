@@ -66,7 +66,7 @@ jobs:
           file: ./Dockerfile
           push: true
           build-args: |
-            backend_url=${{ secrets.PROD_API_URL }}
+            backend_url=https://catedra3arqui.onrender.com/api/
           platforms: linux/amd64,linux/arm64
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/cubi12-front:latest
