@@ -25,7 +25,7 @@ jobs:
           push: true
           build-args: | 
             backend_url=https://catedra3arqui.onrender.com/api/
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cubi12-front:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cubi12-front-deploy
 
       - name: Trigger Render Deploy Hook
         run: |
